@@ -15,7 +15,7 @@ app.listen(PORT, () => {
 
 app.use(
   '/', 
-  connectors
+  connectors,
   repositories,
   services,
   routes,
