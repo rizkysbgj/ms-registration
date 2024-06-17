@@ -5,7 +5,7 @@ const services = (req, res, next) => {
 
   const otpService = new OtpService({ otpRepository });
 
-  const registrationService = new RegistrationService({ userConnector });
+  const registrationService = new RegistrationService({ userConnector, otpService });
 
   Object.assign(res.locals, {
     otpService,
